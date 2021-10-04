@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OnePlayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Comic Sans MS, Helvetica, sans-serif;}
+        form {border: 3px solid #f1f1f1;}
+
+        input[type=text], input[type=text] {
+            width: auto;
+            padding: 12px 20px;
+            margin: auto;
+            display: block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+
+        button {
+            background-color: #45BFBD;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: auto;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        h2.headeralign {
+            text-align: center;
+        }
+
+
+        /* Padding so the border box is not touching Username... */
+        .container {
+            padding: 16px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h2 class = "headeralign">ONE PLAYER</h2>
+
+<form action="BoardDesign.html" method="post">
+
+
+    <div class="container">
+        <label for="pName"><b>Player</b></label>
+        <input type="text" placeholder="Player Name" name="uname" required>
+
+        <label for="cName"><b>Computer</b></label>
+        <input type="text" placeholder="Computer Player Name" name="psw" required>
+
+        <button type= "submit">Start</button>
+        <p> Good Luck!</p>
+    </div>
+
+</form>
+
+</body>
+</html>
+

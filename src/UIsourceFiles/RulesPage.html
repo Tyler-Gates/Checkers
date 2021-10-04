@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Checkers Rules</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Comic Sans MS, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  color: black;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>The Rules of Checkers</h1>
+</div>
+
+<div class="navbar">
+  <a href= "HomePage.php">Home</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Rules</h2>
+    <h3>Object</h3>
+    <p>Remove all of your opponent's checkers from the gameboard by capturing them.</p>
+    
+    <h3>How to Play</h3>
+    <p>Choose a player to go first. On your turn, move any one of your checkers by the movement rules described below. After you move one checker, your turn is over. The game continues with players alternating turns.</p>
+    
+     <h5>Movement Rules</h5>
+     <p>Always move your checker diagonally forward, toward your opponent's side of the gameboard.</p>
+     <p>Move your checker one space diagonally, to an open adjacent square; or jump one or more checkers diagonally to an open square adjacent to the checker you jumped. When you jump over an opponent's checker, you capture it.</p>
+     <p>If all squares adjacent to your checker are occupied, your checker is blocked and cannot move.</p>
+     
+     <h5>To Use Checkers Clock:<h5>
+     <ul>
+     	<li>Right player move: Press 'k' character on keyboard.</li>
+     	<li>Left player move: Press 's' character on keyboard.</li>
+     	<li>Pause Game: Spacebar</li>
+     </ul>
+
+     <h5>Capturing an Opponent's Checker</h5>
+     <p>If you jump an opponent's checker, you capture it and it is then removed from the gameboard.</p>
+     <h5>Becoming a "King"</h5>
+     <p>As soon as one of your checkers reaches the first row on your opponent's side of the gameboard, it becomes a King. Now this checker can move forward or backward on the gameboard. </p>
+     <h3>How to Win</h3>
+     <p>The first player to capture all opposing checkers from the gameboard wins the game!</p>
+    </div>
+
+
+
+</div>
+</body>
+</html>
