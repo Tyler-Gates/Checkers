@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="board.css" />
+        <script defer src="script.js"></script>
+        <title>Checkers</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <button type="One PLayer">One Player</button>
+                <button type="Two Player">Two Player</button>
+            </div>
+            <div id= "startButtons">
+                <button  id= "gameStart">Start game</button>
+            </div>
+            <p>Each player has <span id="countdowntimer">2 </span> minutes to make a move</p>
+
+            <script type="text/javascript">
+                document.getElementById("gameStart").addEventListener("click", function(){
+                    var timeleft = 120;
+
+                    var downloadTimer = setInterval(function function1(){
+                        document.getElementById("countdown").innerHTML = timeleft +
+                            "&nbsp"+"seconds remaining";
+
+                        timeleft -= 1;
+                        if(timeleft <= 0){
+                            clearInterval(downloadTimer);
+                            document.getElementById("countdown").innerHTML = "Time is up!"
+                        }
+                    }, 1000);
+
+                    console.log(countdown);
+                });
+            </script>
+
+            <div id= "countdown"></div>
+            <table>
+                <tr>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="0"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="1"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="2"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="3"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="red-piece" id="4"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="5"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="6"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="7"></p></td>
+                    <td class="noPieceHere"></td>
+                </tr>
+                <tr>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="8"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="9"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="10"></p></td>
+                    <td class="noPieceHere"></td>
+                    <td><p class="red-piece" id="11"></p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                </tr>
+                <tr>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                    <td class="noPieceHere"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="black-piece" id="12"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="13"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="14"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="15"></span></td>
+                    <td class="noPieceHere"></td>
+                </tr>
+                <tr>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="16"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="17"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="18"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="19"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="black-piece" id="20"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="21"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="22"></span></td>
+                    <td class="noPieceHere"></td>
+                    <td><span class="black-piece" id="23"></span></td>
+                    <td class="noPieceHere"></td>
+                </tr>
+            </table>
+            <div class="red-turn-text">
+                Reds turn
+            </div>
+            Red Score: <input type="number" readonly id="redS">
+            <p id="divider"></p>
+            <div class="black-turn-text">
+                Blacks turn
+            </div>
+            Black Score: <input type="number" readonly id="blackS">
+        </main>
+    </body>
+    </html>

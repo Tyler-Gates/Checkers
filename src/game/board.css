@@ -1,0 +1,56 @@
+
+
+td {
+    background-image: url("img/wood2.jpg");
+    position: relative;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    table-layout: fixed;
+    z-index: 1;
+}
+
+.noPieceHere {
+    background-image: url("img/wood.png");
+}
+
+.red-piece {
+    background-image: url("img/redc.png");
+    position: absolute;
+    left: -1px;
+    top: -17px;
+    right: 0;
+    bottom: 0;
+    background-size: 66px 66px;
+    height:65px;
+    width:65px;
+    align-items:center;
+    z-index: 3;
+}
+
+.black-piece {
+    background-image: url("img/blackc.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 66px 66px;
+    z-index: 2;
+}
+
+.king.red-piece {
+    background-image: url("img/redk.png");
+}
+
+.king.black-piece {
+    background-image: url("img/blackk.png");
+}
+
+.red-turn-text {
+
+}
+
+.black-turn-text {
+    color: grey;
+}
