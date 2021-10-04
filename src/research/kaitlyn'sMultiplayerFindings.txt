@@ -1,0 +1,15 @@
+When extensively researching real-time multiplayer, it became clear that the website hosting 
+application chosen was not going to be an option due to it being mostly for php/mysql coding. 
+Unfortunately, there is no way to install Node.js or anything else for that matter even if the 
+site were to be upgraded. This information can be found when clicking the following links, 
+https://www.000webhost.com/forum/t/hosting-a-game-server/18273 and 
+https://www.000webhost.com/forum/t/how-to-add-node-js-on-free-webhosting-plan/116362. 
+With classes and job schedules, it was a bit difficult to find a lot of time to put aside to 
+figure out a whole different platform that is able to install node.js. If we were able to use 
+NodeJs with the website hosting application, we would most likely being using node.js and web sockets 
+to allow fast two-way communication between the server and the client. Many of the websites I was 
+reading were suggesting at least the use of node.js, it’s very unfortunate the web app we used in 
+the beginning doesn’t support it… There are web hosting applications that do support node.js and 
+socket.io, but it’s very time consuming learning the functions of a different web hosting app and 
+then trying to figure out coding in node.js/socket.io. Hopefully, this is a task the group can possibly 
+work on in the future.

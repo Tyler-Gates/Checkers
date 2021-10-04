@@ -1,0 +1,20 @@
+When it came to researching playing checkers against the computer, it 
+was a little bit less complicated than multiplayer (because of the block
+with the the web hosting app not being able to support node.js). One GitHub 
+was talking about how they used an artificial (AI) engine where Minimac and 
+Alpha-Beta pruning were key. Minimax is the strategy when trying to implement 
+discrete, alternating moves. The concept is about searching for the move that 
+will minimize options of the opponent (explores a tree). Then, when it comes to 
+the concept Alpha-beta pruning, is where the search tree before performing Minimax 
+is significantly pruned because Minimax has to search the entire tree of moves (which can be a lot). 
+However, Minimax is required to run the AI engine, so Alpha-beta pruning is a nice technique 
+to use along side. To find out more information, here is the link to the git hub, 
+https://github.com/billjeffries/jsCheckersAI. In the end, with any game that uses 
+AI’s, an AI engine must be built to make the computer’s decisions. Two important 
+parts when it comes to building engine, is first, calculating a value for a given board 
+(which the concept can be seen on our already existing checkers board I would say) and 
+second, going through all possible moves to select the best move (which can be challenging 
+depending on the different methods used). It can get a little complicated, but if there were 
+a few more weeks, it seems to be doable if it were the only thing to implement… Personally, I am 
+not a very strong JavaScript coder, so I would need to study it. Especially since I’ve been mostly 
+coding in php/mysql most of the sprints.
